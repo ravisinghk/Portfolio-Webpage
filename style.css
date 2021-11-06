@@ -1,0 +1,348 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 0;
+    /* padding: 0; */
+  }
+
+
+#navbar{
+    position: fixed;
+    width: 100vw;
+    height: 5rem;
+    background: linear-gradient(45deg, #0F4957, #125769);
+    top: 0;
+    left: 0;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 10;
+}
+
+.link{
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    margin: 0rem 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+#welcome-section{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #141414 0%, #3D3D3D 100%);
+    /* box-sizing: border-box; */
+    margin: 0px;
+    padding: 0%;
+    border: 0;
+
+}
+
+#welcome-text{
+    font-family: 'Lato', sans-serif;
+    font-size: 55px;
+    margin-bottom: 1%;
+    color: white;
+}
+
+#welcome-subtitle{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    margin-top: 0%;
+    color: #932556;
+    font-weight: bolder;
+}
+
+#projects{
+    width: 100%;
+    height: max-content;
+    /* height: 200vh; */
+    background-color:#45567d;
+}
+
+#project-sec-heading{
+    display: block;
+    border-bottom: 1px solid white;
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    color: white;
+    margin: auto;
+    text-align: center;
+    width: 45%;
+    padding-top: 80px;
+    margin-bottom: 80px;
+}
+
+
+.project-cards-div{
+    display: grid;
+    grid-template-columns: 28vw 28vw 28vw;
+    grid-auto-rows: 34vw;
+    row-gap: 5vw;
+    column-gap:  4vw;
+    justify-content: center;
+    padding-bottom: 100px;
+    
+
+}
+
+.project-card:hover{
+    transform: scale(102%);
+}
+
+
+.project-card{
+    /* border: 1px solid red;
+    width: 350px;
+    height: 425px;
+    margin: 40px 0px; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* border: 1px solid black; */
+}
+
+
+
+.picture{
+    /* border: 1px solid black; */
+    height: 28vw;   /*Height eqaual to grid-template-columns*/
+    
+}
+
+.project-name{
+    /* border: 1px solid black; */
+    height: 6vw;
+    background-color: #1D2935;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+img{
+    height: 28vw;
+}
+
+#contact-section{
+    height: max-content;
+    background-color: #1B2F33;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+#contact-section-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 35px;
+}
+
+#contact-section-head{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+#contact-section-subtitle{
+    margin-top: 0px;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#contact-section-links{
+    /* border: 1px solid black; */
+    width: 75vw;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+}
+
+.contact-link{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    transition: transform 300ms ease-in-out 10ms;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.contact-link:hover{
+    transform: scale(104%);
+    transform: translateY(9px)
+}
+
+.icon{
+    padding-top: 10px;
+    height: 25px;
+    filter: invert(100%);
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 1196px) {
+    
+    #project-sec-heading{
+        font-size: 33px;
+    }
+  }
+
+
+  @media screen and (max-width: 1019px) {
+    
+    #project-sec-heading{
+        font-size: 30px;
+    }
+
+    .project-cards-div{
+        display: grid;
+        grid-template-columns: 45vw 45vw;
+        grid-auto-rows: 51vw;
+        row-gap: 5vw;
+        column-gap:  4vw;
+        justify-content: center;
+        padding-bottom: 100px;
+        
+    
+    }
+
+    .picture{
+        border: 1px solid black;
+        height: 45vw;   /*Height eqaual to grid-template-columns*/
+        
+    }
+
+    img{
+        height: 45vw;
+    }
+
+    .project-name{
+        /* border: 1px solid black; */
+        height: 6vw;
+        background-color: #1D2935;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+    }
+    
+
+  }
+
+@media screen and (max-width:650px){
+
+    #contact-section-links{
+        width: 90vw;
+    }
+}
+
+
+
+  @media screen and (max-width: 550px) {
+    
+    #project-sec-heading{
+        font-size: 30px;
+    }
+
+    .project-cards-div{
+        display: grid;
+        grid-template-columns: 85vw;
+        grid-auto-rows: 98vw;
+        row-gap: 14vw;
+        column-gap:  4vw;
+        justify-content: center;
+        padding-bottom: 100px;
+        
+    
+    }
+
+    .picture{
+        border: 1px solid black;
+        height: 85vw;   /*Height eqaual to grid-template-columns*/
+        
+    }
+
+    img{
+        height: 85vw;
+    }
+
+    .project-name{
+        /* border: 1px solid black; */
+        height: 13vw;
+        background-color: #1D2935;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+    }
+    
+
+  }
+
+
+  @media screen and (max-width: 490px){
+
+
+    #contact-section-links{
+        width: 90vw;
+        justify-content: space-between;
+    }
+
+    .contact-link{
+        font-size: 17px;
+    }
+
+    .icon{
+        height: 22px;
+    }
+
+  }
+
+  @media screen and (max-width: 380px){
+
+
+    #contact-section-head{
+        font-size: 30px;
+    }
+
+    #contact-section-subtitle{
+        font-size: 15px;
+    }
+
+    #contact-section-links{
+        width: 90vw;
+        justify-content: space-between;
+    }
+
+    .contact-link{
+        font-size: 15px;
+    }
+
+    .icon{
+        height: 20px;
+    }
+
+  }
