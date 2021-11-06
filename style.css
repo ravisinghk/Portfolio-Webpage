@@ -277,7 +277,7 @@ img{
     }
 
     .picture{
-        border: 1px solid black;
+        /* border: 1px solid black; */
         height: 85vw;   /*Height eqaual to grid-template-columns*/
         
     }
